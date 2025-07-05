@@ -1,1 +1,2 @@
 # Adaptive-PID-Control-for-Quadrotor-UAVs-Using-Feedback-Linearization-and-Deep-Reinforcement-Learning
+This repository implements an adaptive PID control framework for quadrotor UAVs, integrating feedback linearization with Deep Reinforcement Learning (TD3) to tune PID gains in real-time. The controller ensures robust tracking of yaw, pitch, roll, and altitude under nonlinear dynamics and external disturbances. The approach combines classical control structure with actor-critic learning to achieve high-precision, adaptive flight control in a simulated environment.
