@@ -81,7 +81,7 @@ For complete theoretical background, design equations, training pipeline, and re
 
 ---
 
-## 📎 **Citations & References**
+## **Citations & References**
 
 Key techniques referenced in this project:
 
@@ -89,13 +89,17 @@ Key techniques referenced in this project:
 * Deep Deterministic Policy Gradient (DDPG) and TD3
 * Adaptive control using DRL agents
 
-See project report and inline code comments for complete references.
+See project report for complete references.
 
 ---
 
+## **Author**
+
+Shreehan S Kate
+
 ## **Contributing**
 
-Pull requests are welcome! If you want to extend this framework (e.g., test on a different plant, add LQR baseline, etc.), feel free to fork and improve.
+Pull requests are welcome! If you'd like to extend this framework (e.g., test on a different plant, add LQR baseline, etc.), please feel free to fork and improve.
 
 ---
 
