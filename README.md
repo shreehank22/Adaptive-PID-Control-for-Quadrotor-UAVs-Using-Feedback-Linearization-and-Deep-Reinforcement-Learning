@@ -21,6 +21,7 @@ Quadrotor UAVs are nonlinear, underactuated systems with significant sensitivity
 │   ├── Environment_Setup.m         # Defines observation, action, and reward logic
 │   ├── ResetFunction.m             # Custom reset logic for episodic training
 │   └── TrainingOptions.m           # Training hyperparameters (batch size, steps, etc.)
+│   └── TD3Agent_Setup.m            # Configuration of TD3 agent (agent options, networks)
 
 ├── Simulink Model/
 │   └── FBL_ON_UAV_Final.slx        # Simulink model of feedback-linearized UAV
@@ -28,7 +29,7 @@ Quadrotor UAVs are nonlinear, underactuated systems with significant sensitivity
 ├── TD3_Networks/
 │   ├── ActorNetwork_TD3.m          # Actor neural network architecture
 │   ├── CriticNetwork_TD3.m         # Critic network design
-│   └── TD3Agent_Setup.m            # Configuration of TD3 agent (agent options, networks)
+│   └── TD3Agent_Setup.m            
 
 ├── Trained TD3 Agent/
 │   ├── AgentTD3_Final2.mat         # Pre-trained TD3 agent
