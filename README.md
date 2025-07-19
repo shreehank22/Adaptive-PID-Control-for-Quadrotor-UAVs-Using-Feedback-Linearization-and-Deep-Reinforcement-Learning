@@ -73,9 +73,10 @@ Quadrotor UAVs are nonlinear, underactuated systems with significant sensitivity
 
 ---
 
-## Project Report
+📘 Documentation
+For complete theoretical background, design equations, training pipeline, and result analysis, refer to:
 
-📄 [SystemIdentificationandControlofMobileRobot.pdf](SystemIdentificationandControlofMobileRobot.pdf)
+📄 [ResearchProject_Report.pdf](ResearchProject_Report.pdf)
 
 ---
 
