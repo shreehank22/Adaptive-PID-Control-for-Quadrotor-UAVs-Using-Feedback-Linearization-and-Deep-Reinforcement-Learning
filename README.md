@@ -9,9 +9,8 @@ This repository contains MATLAB and Simulink files for the implementation of an 
 Quadrotor UAVs are nonlinear, underactuated systems with significant sensitivity to external disturbances. Classical controllers like PID and MPC are limited by their fixed gain structures and offline tuning methods. This project integrates TD3 with:
 
 * **Adaptive PID Control**: TD3 tunes $K_p, K_i, K_d$ gains online.
-* **Adaptive MPC Control**: TD3 adjusts MPC weights $Q, R, \Delta R$ adaptively.
 * **Feedback Linearization (FBL)**: Used to linearize quadrotor dynamics before controller design.
-* **Simulink Integration**: Realistic nonlinear model simulation of quadrotor using FBL.
+* **Simulink Integration**: Realistic nonlinear model simulation of a quadrotor using FBL.
 
 ---
 
