@@ -68,7 +68,6 @@ Quadrotor UAVs are nonlinear, underactuated systems with significant sensitivity
 ## **Results**
 
 * TD3-PID shows strong disturbance rejection and smooth recovery in altitude/attitude.
-* TD3-MPC balances tracking precision with energy-efficient control.
 * Comparative analysis in the report shows clear performance gain over fixed-gain counterparts.
 
 ---
