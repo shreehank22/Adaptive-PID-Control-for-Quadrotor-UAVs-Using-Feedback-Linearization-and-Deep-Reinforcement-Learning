@@ -1,12 +1,12 @@
 # **Adaptive PID Control for Quadrotor UAVs Using Feedback Linearization and Deep Reinforcement Learning**
 
-This repository contains MATLAB and Simulink files for the implementation of an adaptive control strategy for a nonlinear quadrotor UAV. The core objective is to improve trajectory tracking and robustness using a Deep Reinforcement Learning (DRL) agent—specifically, **Twin Delayed Deep Deterministic Policy Gradient (TD3)**—to dynamically tune the gains of PID and MPC controllers in real time.
+This repository contains MATLAB and Simulink files for the implementation of an adaptive control strategy for a nonlinear quadrotor UAV. The core objective is to improve trajectory tracking and robustness using a Deep Reinforcement Learning (DRL) agent—specifically,**Deep Deterministic Policy Gradient (DDPG)** and **Twin Delayed Deep Deterministic Policy Gradient (TD3)**—to dynamically tune the gains of PID controllers in real time.
 
 ---
 
 ## **Project Overview**
 
-Quadrotor UAVs are nonlinear, underactuated systems with significant sensitivity to external disturbances. Classical controllers like PID and MPC are limited by their fixed gain structures and offline tuning methods. This project integrates TD3 with:
+Quadrotor UAVs are nonlinear, underactuated systems with significant sensitivity to external disturbances. Classical controllers like PID and MPC are limited by their fixed gain structures and offline tuning methods. This project integrates DDPG and TD3 with:
 
 * **Adaptive PID Control**: TD3 tunes $K_p, K_i, K_d$ gains online.
 * **Feedback Linearization (FBL)**: Used to linearize quadrotor dynamics before controller design.
@@ -32,6 +32,7 @@ Quadrotor UAVs are nonlinear, underactuated systems with significant sensitivity
 │   └── TD3Agent_Setup.m            
 
 ├── Trained TD3 Agent/
+│   ├── AgentDDPG_Final.mat         # Pre-trained DDPG agent
 │   ├── AgentTD3_Final2.mat         # Pre-trained TD3 agent
 │   ├── BlockDiagram.png            # System block representation
 │   ├── Compiled_Code.mlx           # Consolidated code to reproduce results
@@ -62,6 +63,7 @@ Quadrotor UAVs are nonlinear, underactuated systems with significant sensitivity
    * Load the Simulink model: `FBL_ON_UAV_Final.slx`.
    * Use `AgentTD3_Final2.mat` to directly evaluate a trained agent.
    * Run simulations and visualize tracking performance.
+   * A pre-trained DDPG agent is included for benchmarking and comparative analysis against the TD3-based adaptive PID controller.
 
 ---
 
@@ -97,7 +99,7 @@ Shreehan S Kate
 
 ## **Contributing**
 
-Pull requests are welcome! If you'd like to extend this framework (e.g., test on a different plant, add LQR baseline, etc.), please feel free to fork and improve.
+Work is being done in drafting the results obtained after running the DDPG-PID controller. Pull requests are welcome! If you'd like to extend this framework (e.g., test on a different plant, add LQR baseline, etc.), please feel free to fork and improve.
 
 ---
 
